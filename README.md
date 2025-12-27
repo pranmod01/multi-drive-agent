@@ -1,6 +1,41 @@
 # Multi-drive Curiosity Agent in a Controlled Sandbox Environment
 
-Code coming soon!
+A bio-inspired reinforcement learning framework that integrates competing reward systems to create more robust and aligned AI behavior.
+
+## Quick Start
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Install package in development mode
+pip install -e .
+
+# Run environment test
+python examples/test_environment.py
+
+# Run tests
+pytest tests/
+```
+
+## Project Structure
+
+```
+multi-drive-agent/
+├── multi_drive_agent/          # Main package
+│   ├── agents/                 # Agent implementations
+│   ├── drives/                 # Drive modules (curiosity, safety, etc.)
+│   ├── environments/           # Environment implementations
+│   │   ├── base_environment.py
+│   │   └── sandbox_environment.py
+│   ├── meta_controller/        # Meta-controller for drive arbitration
+│   └── utils/                  # Utilities (config, metrics, logging)
+├── configs/                    # Configuration files
+│   └── default_config.yaml
+├── experiments/                # Experiment scripts
+├── tests/                      # Unit tests
+└── examples/                   # Example usage scripts
+```
 
 ## Abstract
 
